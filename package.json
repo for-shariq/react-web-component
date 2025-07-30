@@ -1,17 +1,27 @@
 {
-  "name": "react-web-component",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-chat-widget",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "description": "A self-contained React chat widget that can be embedded in any website",
+  "keywords": ["react", "chat", "widget", "web-component", "sharepoint"],
+  "author": "Your Name",
+  "license": "MIT",
+  "main": "dist/chat-widget.iife.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
